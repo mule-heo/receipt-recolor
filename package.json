@@ -1,0 +1,17 @@
+{
+  "name": "receipt-recolor",
+  "version": "0.1.0",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Have a nice day!\""
+  },
+  "keywords": [],
+  "author": "mule-heo",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "jpeg-js": "^0.4.4"
+  }
+}
