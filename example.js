@@ -1,7 +1,7 @@
 import fs from "fs";
 import jpeg from "jpeg-js";
 
-const FILE_PATH = "FILL ME IN";
+const FILE_PATH = "./images/example.jpg";
 
 const BACKGROUND_COLOR = [41, 49, 62];
 const SIMILARITY = 65;
@@ -9,7 +9,6 @@ const ERROR = 255 * (100 - SIMILARITY) / 100;
 
 const data = fs.readFileSync(FILE_PATH);
 const rawImageData = jpeg.decode(data, { useTArray: true });
-
 
 /**
  * 
@@ -43,5 +42,5 @@ changeColor(rawImageData);
 
 const newImageData = jpeg.encode(rawImageData, 90);
 
-const OUT_DIR = "FILL ME IN";
+const OUT_DIR = "./images/example-output.jpg";
 fs.writeFileSync(OUT_DIR, newImageData.data);

@@ -1,11 +1,13 @@
 {
-  "name": "receipt-recolor",
+  "name": "recolor-dark-mode-receit",
   "version": "0.1.0",
   "main": "index.js",
   "type": "module",
   "private": true,
   "scripts": {
-    "test": "echo \"Have a nice day!\""
+    "test": "echo \"Have a nice day!\"",
+    "start": "node index.js",
+    "start-example": "node example.js"
   },
   "keywords": [],
   "author": "mule-heo",
